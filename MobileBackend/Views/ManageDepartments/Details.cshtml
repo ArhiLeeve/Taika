@@ -1,0 +1,66 @@
+﻿@model MobileBackend.DataAccess.Departments
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Departments</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer_id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Customer_id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Contractor_id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Contractor_id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Employees.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Employees.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Kustannuspaikat.Nimi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Kustannuspaikat.Nimi)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Department_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
